@@ -2,6 +2,7 @@ package com.insiderUI;
 
 
 import com.insiderUI.pages.CareerPage;
+import com.insiderUI.pages.Career_QA;
 import com.insiderUI.pages.FormPage;
 import com.insiderUI.pages.MainPage;
 import com.utils.TestBase;
@@ -11,6 +12,7 @@ public class uiTest extends TestBase {
 
     MainPage mainPage = new MainPage();
     CareerPage careerPage = new CareerPage();
+    Career_QA career_qa = new Career_QA();
     FormPage formPage = new FormPage();
 
 
@@ -27,21 +29,21 @@ public class uiTest extends TestBase {
 
         careerPage.selectQA();
 
-        careerPage.selectSeeAllQA();
+        career_qa.selectSeeAllQA();
 
-        careerPage.selectLocationFilter();
+        career_qa.selectLocationFilter();
 
-        careerPage.validateIstanbulOption();
+        career_qa.validateIstanbulOption();
 
-        careerPage.validatePositions();
+        career_qa.validatePositions();
 
-        careerPage.validateDepartment();
+        career_qa.validateDepartment();
 
-        careerPage.validateLocations();
+        career_qa.validateLocations();
 
-        careerPage.validateApplyNowButton();
+        career_qa.validateApplyNowButton();
 
-        careerPage.clickFirstJob();
+        career_qa.clickFirstJob();
 
         formPage.validateTitle();
 
